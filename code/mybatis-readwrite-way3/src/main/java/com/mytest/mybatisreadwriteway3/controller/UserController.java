@@ -1,6 +1,6 @@
 package com.mytest.mybatisreadwriteway3.controller;
 
-import com.mytest.mybatisreadwriteway3.service.UserService;
+import com.mytest.mybatisreadwriteway1.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

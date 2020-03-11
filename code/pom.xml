@@ -16,21 +16,13 @@
     <properties>
         <alibaba-fastjson-version>1.2.33</alibaba-fastjson-version>
         <jdk-version>1.8</jdk-version>
-        <swagger2-version>2.7.0</swagger2-version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger2-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger2-version}</version>
-        </dependency>
+
     </dependencies>
 
 </project>

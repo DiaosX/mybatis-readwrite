@@ -1,4 +1,4 @@
-package com.mytest.mybatisreadwriteway3;
+package com.mytest.mybatisreadwriteway1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
