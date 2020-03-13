@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mytest.mybatisreadwriteway2.dao.BizUserMapperExt">
+    <select id="selectByCondition" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from biz_user
+        where disabled=0
+        <foreach collection="condition.keys" item="k" separator="and" open="and">
+            <if test="null != condition[k] ">
+                <choose>
+                    <when test="condition[k] instanceof java.util.List">
+                        ${k} IN
+                        <foreach collection="condition[k]" item="item" separator="," open="(" close=")">
+                            #{item}
+                        </foreach>
+                    </when>
+                    <otherwise>
+                        ${k} = #{condition[${k}]}
+                    </otherwise>
+                </choose>
+            </if>
+        </foreach>
+    </select>
+</mapper>

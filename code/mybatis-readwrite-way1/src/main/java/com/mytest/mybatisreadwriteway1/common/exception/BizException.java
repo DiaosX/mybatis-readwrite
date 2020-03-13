@@ -1,4 +1,6 @@
-package com.mytest.mybatisreadwriteway1.common.base;
+package com.mytest.mybatisreadwriteway1.common.exception;
+
+import com.mytest.mybatisreadwriteway1.common.base.BaseError;
 
 public class BizException extends  RuntimeException {
 

@@ -14,11 +14,10 @@
         <module>mybatis-readwrite-way3</module>
     </modules>
     <properties>
-        <alibaba-fastjson-version>1.2.33</alibaba-fastjson-version>
         <jdk-version>1.8</jdk-version>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <fastjson.version>1.2.36</fastjson.version>
+        <swagger2-version>2.8.0</swagger2-version>
     </properties>
 
     <dependencies>

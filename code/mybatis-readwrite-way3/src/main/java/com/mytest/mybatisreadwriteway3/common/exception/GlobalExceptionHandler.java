@@ -1,5 +1,7 @@
-package com.mytest.mybatisreadwriteway1.common.base;
+package com.mytest.mybatisreadwriteway3.common.exception;
 
+import com.mytest.mybatisreadwriteway3.common.base.ApiResponse;
+import com.mytest.mybatisreadwriteway3.common.base.CommonEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.FieldError;
